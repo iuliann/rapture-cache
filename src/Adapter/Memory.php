@@ -11,7 +11,7 @@ use Rapture\Cache\Definition\CacheTrait;
  * Only caches data per request - TTL's are not taken in consideration.
  *
  * @package Rapture\Cache\Adapter
- * @author Iulian N. <rapture@iuliann.ro>
+ * @author  Iulian N. <rapture@iuliann.ro>
  * @license LICENSE MIT
  */
 class Memory implements CacheInterface
@@ -26,9 +26,9 @@ class Memory implements CacheInterface
     /**
      * Set a cache key
      *
-     * @param string $key Cache key
-     * @param mixed $data Cache data
-     * @param int $ttl Time-to-live
+     * @param string $key  Cache key
+     * @param mixed  $data Cache data
+     * @param int    $ttl  Time-to-live
      *
      * @return bool
      */
@@ -40,9 +40,9 @@ class Memory implements CacheInterface
     /**
      * Get a cache key data
      *
-     * @param string $key Cache key
-     * @param mixed $default Default value to return if cache key doesn't exist
-     * @param int $ttl Time-to-live (only for File driver)
+     * @param string $key     Cache key
+     * @param mixed  $default Default value to return if cache key doesn't exist
+     * @param int    $ttl     Time-to-live (only for File driver)
      *
      * @return mixed
      */
@@ -59,7 +59,7 @@ class Memory implements CacheInterface
      * Checks whether a cache key exists
      *
      * @param string $key Cache key
-     * @param null $ttl Time-to-live (only for File driver)
+     * @param null   $ttl Time-to-live (only for File driver)
      *
      * @return bool
      */
@@ -85,8 +85,8 @@ class Memory implements CacheInterface
     /**
      * Increment a cache key with $step
      *
-     * @param string $key Cache key
-     * @param int $step Increment step
+     * @param string $key  Cache key
+     * @param int    $step Increment step
      *
      * @return int Value after incrementation
      */
@@ -104,8 +104,8 @@ class Memory implements CacheInterface
     /**
      * Decrement a cache key with $step
      *
-     * @param string $key Cache key
-     * @param int $step Increment step
+     * @param string $key  Cache key
+     * @param int    $step Increment step
      *
      * @return int Value after decrement
      */

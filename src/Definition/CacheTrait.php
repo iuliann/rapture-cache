@@ -6,7 +6,7 @@ namespace Rapture\Cache\Definition;
  * Cache adapter common methods
  *
  * @package Rapture\Cache
- * @author Iulian N. <rapture@iuliann.ro>
+ * @author  Iulian N. <rapture@iuliann.ro>
  * @license LICENSE MIT
  */
 trait CacheTrait
@@ -21,9 +21,9 @@ trait CacheTrait
     public function __construct(array $config)
     {
         $this->config = $config + [
-            'namespace' =>  'app',
-            'ttl'       =>  CacheInterface::ONE_MINUTE
-        ];
+                'namespace' => 'app',
+                'ttl'       => CacheInterface::ONE_MINUTE,
+            ];
 
         $this->init();
     }
@@ -58,8 +58,7 @@ trait CacheTrait
         foreach ($keys as $key) {
             if (is_array($key)) {
                 $this->multiDelete($key);
-            }
-            else {
+            } else {
                 $this->delete($key);
             }
         }
@@ -70,9 +69,9 @@ trait CacheTrait
     /**
      * Get with callback
      *
-     * @param string $key Key to get
-     * @param mixed $callback Callback to call
-     * @param int $ttl Time to live
+     * @param string $key      Key to get
+     * @param mixed  $callback Callback to call
+     * @param int    $ttl      Time to live
      *
      * @return mixed
      */
