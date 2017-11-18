@@ -13,7 +13,7 @@ Basic cache component for PHP.
 ## Install
 
 ```
-composer require iuliann/rapture-cache
+composer require mrjulio/rapture-cache
 ```
 
 ## Quick start
